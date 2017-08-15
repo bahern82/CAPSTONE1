@@ -1,0 +1,33 @@
+{
+  "name": "freelance_webdev",
+  "version": "1.0.0",
+  "description": "Capstone project for coursera",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahern82/CAPSTONE1.git"
+  },
+  "keywords": [
+    "test",
+    "freelance",
+    "webdev"
+  ],
+  "author": "brian ahern",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahern82/CAPSTONE1/issues"
+  },
+  "homepage": "https://github.com/bahern82/CAPSTONE1#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0"
+  }
+}

@@ -1,0 +1,31 @@
+.row-header
+{
+	/* margin: 0px auto; padding: 0px auto;*/
+}
+.row-content
+{
+
+}
+footer
+{
+	background-color: 
+}
+body{
+	padding:50px 0px 0px 0px;
+	/* good idea when using fixed-top navigation bar  */
+	z-index: 0;
+
+}
+#bodycontainer
+{
+	margin-bottom: 50px;
+}
+
+#carousel3{
+	background-color: #428bca;
+}
+.carousel-caption{
+	color: #edf4eb
+}
+
+
