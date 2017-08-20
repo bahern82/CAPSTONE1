@@ -4,11 +4,19 @@
 }
 .row-content
 {
-
+	margin-bottom: 30px;
 }
-footer
+
+.port-image
 {
-	background-color: 
+	opacity: 1;
+	width: 90%;
+	height: 90%;
+}
+.port-image:hover {
+  opacity: 0.8;
+  width: 100%;
+	height: 100%;
 }
 body{
 	padding:50px 0px 0px 0px;
@@ -23,9 +31,20 @@ body{
 
 #carousel3{
 	background-color: #428bca;
+
+}
+.carousel-item{
+	height:300px;
 }
 .carousel-caption{
 	color: #edf4eb
 }
-
-
+@media (min-width: 992px){	/*stretch carousel images slightly - so no background is showing */
+  .carouselcontainer{
+    max-width:768px;
+  }
+ @media (min-width: 1140px){
+  .carouselcontainer{
+    max-width:768px;
+  } 
+}
