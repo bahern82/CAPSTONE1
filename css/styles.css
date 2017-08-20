@@ -6,7 +6,7 @@
 {
 	margin-bottom: 30px;
 }
-
+/* portfolio images grow and become have less opacity on mouse hover */
 .port-image
 {
 	opacity: 1;
@@ -33,13 +33,16 @@ body{
 	background-color: #428bca;
 
 }
+.carousel_image_width{
+	width: 100%;
+}
 .carousel-item{
 	height:300px;
 }
 .carousel-caption{
 	color: #edf4eb
 }
-@media (min-width: 992px){	/*stretch carousel images slightly - so no background is showing */
+@media (min-width: 992px){	
   .carouselcontainer{
     max-width:768px;
   }

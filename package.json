@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin":" usemin services.html -d dist --htmlmin -o dist/services.html && usemin portfolio.html -d dist --htmlmin -o dist/portfolio.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin contactus.html -d dist --htmlmin -o dist/contactus.html ",
+    "build":"npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -24,7 +29,12 @@
   },
   "homepage": "https://github.com/bahern82/CAPSTONE1#readme",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.3.0",
+    "rimraf": "^2.6.1",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
